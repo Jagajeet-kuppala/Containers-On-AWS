@@ -1,6 +1,6 @@
 # Deploying Pods to EC2 worker nodes (Managed Node Groups)
 
-### What are Node Groups ?
+## What are Node Groups ?
 - Node Groups consist of one or more EC2 instances running the latest EKS-optimized AMIs.
 - AMIs are configured to work with Amazon EKS out of the box, and include Docker, kubelet, and the AWS IAM Authenticator. 
 - All managed nodes are provisioned as part of an Amazon EC2 Auto Scaling group that's managed by Amazon EKS.
@@ -12,7 +12,7 @@
 > Node Group - Group of nodes managed by EKS using AutoScaler<br>
 > Configure Min & Max no. of nodes to spin up, used by AutoScaler groups when workloads increase.
   
-### Create a Managed Node Group using TF
+## Create a Managed Node Group using TF
 
 > **IMPORTANT:** Node groups needs our networking resources (VPC, subnets, route tables, etc) to follow certain configurations. <br>
 > To know more about EKS networking and corresponding TF scripts to create base Network setup look [here](../networking). <br>
@@ -26,7 +26,7 @@
     2. `teraform plan`
     3. `terraform apply -auto-approve`
 
-#### Deploy Kubernetes official dashboard to your cluster
+### Deploy Kubernetes official dashboard to your cluster
 1. Deploy necessary resources  
     ```shell script
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
@@ -53,7 +53,8 @@
     # delete dashboard
     kubectl delete -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
     ```
-#### Deploy sample Pods using Kubectl
+### Deploy sample Pods using Kubectl
 In this example we will try to deploy, <br>
 - A sample microservice in the node (in private subnet)
-- An ELB (in public subnet) & attach it to the microservice   
+- An ELB (in public subnet) & attach it to the microservice
+> Note: Here, both the public & private subnet should be from same AZ. 

@@ -16,7 +16,7 @@
 - `terraform apply -auto-approve`
 - This creates a managed Kubernetes Control Plane
 
-#### Cluster Add-ons
+### Cluster Add-ons
 Recommended add-ons for EKS cluster
 - **VPC-CNI** 
     - Container Network Interface
@@ -30,7 +30,7 @@ Recommended add-ons for EKS cluster
     - Maintains network rules on each Amazon EC2 node
     - Kube-proxy is not deployed to Fargate nodes.
 
-#### Connecting to EKS API server using kubectl
+### Connecting to EKS API server using kubectl
 > **Note:** For any auth errors while using kubectl to connect refer [here](https://aws.amazon.com/premiumsupport/knowledge-center/eks-api-server-unauthorized-error/)
 
 ![Connecting with EKS using Kubectl](../assets/Connecting%20with%20EKS.png)

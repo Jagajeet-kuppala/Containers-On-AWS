@@ -1,3 +1,8 @@
+variable "region" {
+  default = "ap-south-1"
+  type = string
+}
+
 variable "cluster_name" {
   default = "cluster"
   type = string

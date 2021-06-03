@@ -9,7 +9,7 @@ variable "node_group_name" {
 }
 
 variable "subnet_ids" {
-  default = ["subnet-035ed092060e24e01", "subnet-0dcc19b37750b433f"]
+  default = ["subnet-035ed092060e24e01", "subnet-0dcc19b37750b433f", "subnet-02bb9092399790b5a"]
   type    = list(string)
 }
 
