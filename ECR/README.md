@@ -1,7 +1,7 @@
 # Elastic Container Registry (ECR)
 
-#### [(Sample Scripts)](sampleScripts.md)
-- A place to store(uses S3), manage lifecycle & share artifacts.
+> To Create a ECR repo and push images look into [Sample Scripts](sampleScripts.md)
+- ECR is a place to store(uses S3), manage lifecycle & share artifacts.
 - Account (has)
     - Private Registry (has)
         - Private Repositories...

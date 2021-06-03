@@ -1,14 +1,21 @@
 # Containers on AWS
 
 #### Container services offered by AWS
-- [Elastic Container Registry (ECR)](ECR/README.md)
+![AWS Container services](assets/AWS%20Container%20services.png)
+<br>
+
+Learn about the services and use them instantly using Terraform scripts with the following guides. Before that, please [setup](#DEV_SETUP) your local environment.
+- [Elastic Container Registry (ECR)](ECR)
 - AWS Fargate
-- Elastic Kubernetes Service (EKS)
+- [Elastic Kubernetes Service (EKS)](EKS)
 - Elastic Container Service (ECS)
 
-#### Development Environment Setup
+> For complete K8s and EKS usages and demos look at [eksworkshop.com](https://www.eksworkshop.com/ "EKS Workshop")
+
+#### Development Environment Setup<a name="DEV_SETUP"></a>
 
 - Install [Docker](https://docs.docker.com/engine/install/ "Install Docker")
+- Install [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl "Install Kubectl")
 - Install [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli#install-terraform "Install Terraform")
 - Install [jq](https://stedolan.github.io/jq/download/ "Install jq")
 - Configure AWS CLI 
