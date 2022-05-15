@@ -6,7 +6,7 @@ metadata:
     app: demo-server
   namespace: default
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: demo-server
@@ -21,9 +21,9 @@ spec:
         app: demo-server
     spec:
       containers:
-        - image: 428630729476.dkr.ecr.ap-south-1.amazonaws.com/server:v14
+        - image: 428630729476.dkr.ecr.ap-south-1.amazonaws.com/server:v15
           imagePullPolicy: Always
           name: demo-server
           ports:
-            - containerPort: 8080
+            - containerPort: 80
               protocol: TCP

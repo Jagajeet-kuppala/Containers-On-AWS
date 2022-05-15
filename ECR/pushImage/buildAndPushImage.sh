@@ -4,7 +4,7 @@ export accountID="428630729476"
 export awsRegion="ap-south-1"
 export repoUri="$accountID.dkr.ecr.$awsRegion.amazonaws.com"
 export repoName="server"
-export imageTag="v14"
+export imageTag="v15"
 
 echo "ECR login through Docker login"
 aws ecr get-login-password --region $awsRegion | docker login --username AWS --password-stdin $repoUri
